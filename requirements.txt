@@ -1,5 +1,7 @@
 streamlit
 pandas
-altair
-beautifulsoup4
 requests
+beautifulsoup4
+lxml
+python-dotenv
+cachetools
