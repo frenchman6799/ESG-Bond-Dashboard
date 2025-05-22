@@ -9,13 +9,6 @@ st.title("🇮🇳 India ESG Bond Intelligence Dashboard")
 st.markdown("""
 This dashboard provides a clean visualization of **Green Bonds**, **Social Bonds**, and **Sustainability-linked Bonds** issued in India, based on SEBI data.
 """)
-
-# Debug file existence
-st.sidebar.header("🔎 Data File Check")
-st.sidebar.write("green_bonds.csv exists? ", os.path.exists("green_bonds.csv"))
-st.sidebar.write("social_bonds.csv exists? ", os.path.exists("social_bonds.csv"))
-st.sidebar.write("impact_metrics.csv exists? ", os.path.exists("impact_metrics.csv"))
-
 @st.cache_data
 def load_data():
     green = pd.read_csv("green_bonds.csv")
